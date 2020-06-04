@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm số max</title>
+</head>
+<body>
+<script>
+    function findMax(arr) {
+        let max = arr[0];
+        let resule =0;
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] > max){
+                max = arr[i];
+                resule = i
+            }
+        }
+        alert('giá trị lớn nhất là: ' + max);
+    }
+    let arr = [1, 7, 5, 8, 6, 9, 10, 2, 4];
+    findMax(arr)
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function treRemoveFromArray(x) {
+        let number = parseInt(prompt('Nhập vào 1 số nguyên '));
+        for (let i = 0; i < x.length; i++){
+            if (number === x[i]){
+                x.splice(i, 1);
+            }
+        }
+        document.write(x);
+    }
+    let a = [1, 2 , 3, 4, 5, 6, 7, 8, 9];
+    treRemoveFromArray(a);
+</script>
+</body>
+</html>
